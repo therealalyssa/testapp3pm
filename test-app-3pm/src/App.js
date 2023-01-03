@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Hi, it's Chris Jenkins
+          Hi, it's Chris Jenkins. Bro stop working.
         </a>
       </header>
     </div>
