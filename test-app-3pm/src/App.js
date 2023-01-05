@@ -1,24 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
 import React, { useEffect } from 'react';
-import './widgetsdk-min';
+// import './widgetsdk-min';
 
-function App() {
+import LinearWithValueLabel from './practice';
 
-  useEffect(() => {
-    async function initialise () {
-      const createrPromise= await window.ZOHO.CREATOR.init();
-      console.log(createrPromise)
-      const recordOperations =window.ZOHO.CREATOR.API; // this is the promise
+function App( ) {
 
-       // and I'm parsing it to my context API object to re-use it for every API call
-       console.log(recordOperations)
-    }
-    initialise ();
+  // useEffect(() => {
+  //   async function initialise () {
+  //     const createrPromise= await window.ZOHO.CREATOR.init();
+  //     console.log(createrPromise)
+  //     const recordOperations =window.ZOHO.CREATOR.API; 
+  //      console.log(recordOperations)
+  //   }
+  //   initialise ();
 
 
     
-  }, []);
+  // }, []);
 
   return (
     <div className="App">
@@ -35,6 +35,8 @@ function App() {
         >
           Hi, it's Chris Jenkins. Bro stop working. This is new new vesion. 
         </a>
+        <br></br>
+        <LinearWithValueLabel></LinearWithValueLabel>
       </header>
     </div>
   );
